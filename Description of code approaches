@@ -1,0 +1,25 @@
+In the MainClass:
+
+### Reading csv files & filtered duplicate records
+  Step 1: 
+       * Reading two input files(faceboo.csv & facebook-2.csv) using Bufferedreader class
+       * While reading the files itsef added only unique records into the List and filtered duplicate records
+       * While storing into the List checked below things:
+                                                     --> removed the row which starts or contains with 'String'
+                                                     --> replaced # with empty which starts with '#' as first char
+                                                     --> replaced end ;; with 0; to avoid empty/null at the end of every line or row
+       * printed duplicate records in the console and unique records merged into the final list.
+       
+  Step 2:
+       * After getting merged final list then writing that list into "temp.csv" file with comma(,) seperated values
+       
+### Reading merged csv file & calculate averages
+  Step 1:
+       * While reading temp.csv file itself sorted records in alphabetical order and stored into set and 1st row(header) into headers array
+  Step 2:
+       * Iterating set and calculated averages based on starting alphabet of the country which starts with alphabet 'a' or 'A' and stored into the final list
+       * After getting the final ist then writing that list into "output.csv" file with comma(,) seperated values
+       * output.csv file contains averages of every columns which country starts with 'A'
+       
+       
+   
